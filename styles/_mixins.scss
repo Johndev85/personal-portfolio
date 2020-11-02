@@ -1,0 +1,7 @@
+@import "../styles/variables.scss";
+
+@mixin btn-hover {
+    text-decoration: underline;
+    color: $color-secundary;
+    transform: scale(1.1);
+}

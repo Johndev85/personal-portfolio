@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
+    background-color: $color-primary;
+    & ul {
+        display: flex;
+        margin-right: 5px;
+        & li {
+            margin-right: 20px;
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: $color-font;
+                font-size: 1.1rem;
+                &:hover {
+                    @include btn-hover;
+                }
+            }
+        }
+    }
+    &__cv {
+        padding: 20px 30px;
+        border-radius: 10px;
+        background-color: $color-btn;
+        text-decoration: none;
+        color: $color-font;
+        &:hover {
+            @include btn-hover;
+        }
+    }
+}
