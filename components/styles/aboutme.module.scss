@@ -1,0 +1,25 @@
+.container {
+    height: auto;
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    padding: 30px;
+    &__img {
+        justify-self: center;
+        & img {
+            width: 25rem;
+        }
+    }
+    &__text {
+        text-align: justify;
+        font-size: 1.1rem;
+        & h1 {
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            width: 80%;
+            line-height: 20pt;
+        }
+    }
+}

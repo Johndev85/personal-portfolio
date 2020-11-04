@@ -2,25 +2,30 @@
 @import "../../styles/mixins";
 
 .header {
-    position: fixed;
-    right: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 20px 50px;
     background-color: $color-primary;
-    & ul {
+    & img {
+        width: 90px;
+    }
+    &__menu {
         display: flex;
-        margin-right: 5px;
-        & li {
-            margin-right: 20px;
-            list-style: none;
-            a {
-                text-decoration: none;
-                color: $color-font;
-                font-size: 1.1rem;
-                &:hover {
-                    @include btn-hover;
+        align-items: center;
+        & ul {
+            display: flex;
+            margin-right: 5px;
+            & li {
+                margin-right: 20px;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: $color-font;
+                    font-size: 1.1rem;
+                    &:hover {
+                        @include btn-hover;
+                    }
                 }
             }
         }

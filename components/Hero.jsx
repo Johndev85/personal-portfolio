@@ -10,12 +10,12 @@ function Hero() {
                     </p>
                     <h1>Front-End Developer</h1>
                     <h2>
-                        Desarrollador web / React / Wordpress / Entusiasta
-                        GameDev
+                        Desarrollador web / React / Next.js / Wordpress /
+                        Entusiasta GameDev
                     </h2>
                 </section>
                 <section className={styles.hero__img}>
-                    <img src="/images/hero-img2.png" alt="hero-img2" />
+                    <img src="/images/hero-img.svg" alt="hero-img2" />
                 </section>
             </article>
         </>

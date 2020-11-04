@@ -1,0 +1,32 @@
+import styles from "./styles/aboutme.module.scss"
+
+function AboutMe() {
+    return (
+        <>
+            <article className={styles.container}>
+                <section className={styles.container__img}>
+                    <img src="/images/aboutme-img.svg" alt="aboutme-img" />
+                </section>
+                <section className={styles.container__text}>
+                    <h1>Sobre Mí</h1>
+                    <p>
+                        El desarrollo web para mí es una pasión, me gusta crear
+                        interfaces y sitios web interactivos que brinden
+                        soluciones ágiles y suplan las necesidades de la nueva
+                        era digital. Soy un autodidacta de la educación online,
+                        comencé aprendiendo y aplicando implementaciones en
+                        Wordpress y luego adelantando la carrera de desarrollo
+                        web en el programa especial Platzi Master. <br />
+                        Tengo varios años de experiencia laboral en el mundo de
+                        la tecnología que me han dado tambien habilidades como
+                        trabajo en equipo, atención a clientes, recursividad en
+                        la resolución de problemas, responsabilidad para lograr
+                        retos y objetivos.
+                    </p>
+                </section>
+            </article>
+        </>
+    )
+}
+
+export default AboutMe
