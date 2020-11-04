@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    background-color: $color-primary;
+    color: $color-font;
+
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 35px;
+        text-transform: uppercase;
+        & span {
+            font-size: 1.6rem;
+            color: $color-btn;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+        & h1 {
+            padding-top: 5px;
+            font-size: 2.8rem;
+        }
+        & h2 {
+            padding-top: 5px;
+            font-size: 1.2rem;
+            text-transform: none;
+        }
+    }
+    &__img {
+        & img {
+            width: 30rem;
+            border-radius: 30%;
+        }
+    }
+}
