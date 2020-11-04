@@ -3,7 +3,7 @@
 
 .hero {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: grid;
     grid-template: 1fr / repeat(2, 1fr);
     background-color: $color-primary;
@@ -14,7 +14,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        padding: 35px;
+        padding: 10px 35px;
         text-transform: uppercase;
         & span {
             font-size: 1.6rem;
@@ -30,13 +30,14 @@
         }
         & h2 {
             padding-top: 5px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             text-transform: none;
         }
     }
     &__img {
+        justify-self: start;
         & img {
-            width: 30rem;
+            width: 35rem;
             border-radius: 30%;
         }
     }
