@@ -1,6 +1,7 @@
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import AboutMe from "@/components/AboutMe"
+import Skills from "@/components/Skills"
 
 function HomePage() {
     return (
@@ -9,6 +10,7 @@ function HomePage() {
             <Hero />
             <main>
                 <AboutMe />
+                <Skills />
             </main>
         </>
     )
