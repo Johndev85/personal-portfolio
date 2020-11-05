@@ -32,49 +32,21 @@
             transition: 250ms all;
             &:hover {
                 box-shadow: 1px 4px 19px $color-secundary;
-                font-weight: 500;
+                p {
+                    opacity: 1;
+                }
+                & img {
+                    filter: drop-shadow(2px 4px 4px #585858);
+                }
             }
             & p {
-                opacity: 0.8;
+                opacity: 0.7;
             }
             &__icons {
                 margin: 10px;
                 & img {
                     width: 4rem;
                     margin: 20px;
-                }
-            }
-        }
-    }
-    &__mern {
-        display: grid;
-        grid-template: 1fr / repeat(3, 1fr);
-        grid-gap: 10px;
-        justify-items: center;
-        padding: 20px 30px;
-        font-size: 0.9rem;
-        color: $color-primary;
-        &__modules {
-            & h2 {
-                margin: 15px;
-                text-align: center;
-            }
-            margin: 0 20px;
-            &__icons {
-                display: flex;
-                & img {
-                    width: 4rem;
-                    margin: 10px;
-                }
-                &__item {
-                    text-align: center;
-                    & h3 {
-                        font-size: 1rem;
-                    }
-                    & img {
-                        width: 60px;
-                        filter: drop-shadow(2px 4px 4px #585858);
-                    }
                 }
             }
         }
