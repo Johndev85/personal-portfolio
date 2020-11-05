@@ -3,7 +3,7 @@ import Techs from "@/components/Techs"
 
 function Skills() {
     return (
-        <article className={styles.container}>
+        <article id="skills" className={styles.container}>
             <div className={styles.container__title}>
                 <h1>Lo que hago</h1>
             </div>

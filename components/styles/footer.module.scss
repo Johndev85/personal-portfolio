@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.footer {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $color-primary;
+    font-size: 1.2rem;
+    &__menu {
+        padding-bottom: 30px;
+        border-bottom: 1px solid $color-secundary;
+        ul {
+            display: flex;
+            & li {
+                list-style: none;
+                padding: 10px;
+                & a {
+                    color: $color-font;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    & span {
+        margin-top: 15px;
+        color: $color-secundary;
+        font-size: 1rem;
+    }
+}
