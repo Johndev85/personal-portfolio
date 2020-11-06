@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.container {
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+    color: $color-font;
+    background-color: $color-primary;
+    &__title {
+        text-align: center;
+        padding: 20px;
+    }
+    &__items {
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr);
+        padding: 15px;
+        &__card {
+            place-self: center;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            background-image: url("/images/tech-deal-capture.png");
+            background-size: cover;
+            box-shadow: 0px 4px 10px $color-secundary;
+            border: none;
+            &__titles {
+                width: 250px;
+                height: 250px;
+                padding: 30px 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                color: $color-font;
+                opacity: 0;
+                transition: 250ms all;
+                & a {
+                    width: 140px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 25px;
+                    padding: 15px;
+                    font-size: 1.1rem;
+                    background-color: $color-btn;
+                    color: $color-font;
+                    text-decoration: none;
+                    &:hover {
+                        @include btn-hover;
+                    }
+                }
+                &:hover {
+                    opacity: 1;
+                    box-shadow: 4px 4px 20px $color-secundary;
+                    background-color: rgba($color-primary, 0.9);
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}

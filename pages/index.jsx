@@ -3,6 +3,7 @@ import Hero from "@/components/Hero"
 import AboutMe from "@/components/AboutMe"
 import Skills from "@/components/Skills"
 import Footer from "@/components/Footer"
+import Projects from "@/components/Projects"
 
 function HomePage() {
     return (
@@ -11,6 +12,7 @@ function HomePage() {
             <Hero />
             <main>
                 <AboutMe />
+                <Projects />
                 <Skills />
             </main>
             <Footer />
