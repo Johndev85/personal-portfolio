@@ -4,12 +4,22 @@
 .container {
     width: 100vw;
     height: auto;
-    padding: 20px;
+    padding: 30px;
     color: $color-font;
     background-color: $color-primary;
-    &__title {
-        text-align: center;
-        padding: 20px;
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__title {
+            display: inline-flex;
+            margin-bottom: 30px;
+            border-bottom: 3px solid $color-font;
+            & h1 {
+                padding: 15px 15px;
+                font-size: 1.8rem;
+            }
+        }
     }
     &__items {
         display: grid;

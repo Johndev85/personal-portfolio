@@ -5,13 +5,19 @@
     padding: 30px;
     font-size: 1.1rem;
     color: $color-primary;
-    &__title {
+    &__top {
         display: flex;
         justify-content: center;
         align-items: center;
-        & h1 {
-            padding: 35px 15px 30px 15px;
-            font-size: 1.8rem;
+
+        &__title {
+            display: inline-flex;
+            margin-bottom: 30px;
+            border-bottom: 3px solid $color-primary;
+            & h1 {
+                padding: 15px 15px;
+                font-size: 1.8rem;
+            }
         }
     }
     &__items {

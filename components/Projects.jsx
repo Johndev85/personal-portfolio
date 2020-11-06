@@ -3,9 +3,11 @@ import Link from "next/link"
 
 function Projects() {
     return (
-        <article className={styles.container}>
-            <div className={styles.container__title}>
-                <h1>Mis Proyectos</h1>
+        <article id="projects" className={styles.container}>
+            <div className={styles.container__top}>
+                <div className={styles.container__top__title}>
+                    <h1>Mis Proyectos</h1>
+                </div>
             </div>
             <section className={styles.container__items}>
                 <section className={styles.container__items__card}>

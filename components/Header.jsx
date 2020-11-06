@@ -14,17 +14,17 @@ function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="#proyectos">
+                            <Link href="#skills">
                                 <a>Lo que hago</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="#experiencia">
+                            <Link href="#projects">
                                 <a>Proyectos</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="#contacto">
+                            <Link href="#contact">
                                 <a>Contacto</a>
                             </Link>
                         </li>

@@ -17,12 +17,12 @@ function Footer() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="">
+                        <Link href="#projects">
                             <a>Proyectos</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href="">
+                        <Link href="#contact">
                             <a>Contacto</a>
                         </Link>
                     </li>

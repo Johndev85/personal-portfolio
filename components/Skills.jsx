@@ -4,8 +4,10 @@ import Techs from "@/components/Techs"
 function Skills() {
     return (
         <article id="skills" className={styles.container}>
-            <div className={styles.container__title}>
-                <h1>Lo que hago</h1>
+            <div className={styles.container__top}>
+                <div className={styles.container__top__title}>
+                    <h1>Lo que hago</h1>
+                </div>
             </div>
             <section className={styles.container__items}>
                 <div className={styles.container__items__jobs}>

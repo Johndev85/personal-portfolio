@@ -7,7 +7,11 @@ function AboutMe() {
                 <img src="/images/aboutme-img.svg" alt="aboutme-img" />
             </div>
             <section className={styles.container__text}>
-                <h1>Sobre Mí</h1>
+                <div className={styles.container__text__top}>
+                    <div className={styles.container__text__top__title}>
+                        <h1>Sobre Mí</h1>
+                    </div>
+                </div>
                 <p>
                     El desarrollo web es una pasión, me gusta crear interfaces y
                     sitios web interactivos que brinden soluciones ágiles y
