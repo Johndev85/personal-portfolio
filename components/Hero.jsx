@@ -6,7 +6,7 @@ function Hero() {
             <article className={styles.hero}>
                 <section className={styles.hero__titles}>
                     <p>
-                        <span>Hola</span>, soy John Botero
+                        <span>Hola,</span> soy John Botero
                     </p>
                     <h1>Front-End Developer</h1>
                     <h2>

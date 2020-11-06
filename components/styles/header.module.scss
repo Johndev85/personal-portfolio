@@ -24,7 +24,7 @@
                     color: $color-font;
                     font-size: 1.1rem;
                     &:hover {
-                        @include btn-hover;
+                        text-decoration: underline;
                     }
                 }
             }
@@ -39,5 +39,21 @@
         &:hover {
             @include btn-hover;
         }
+    }
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+
+@media screen and (min-width: 1920px) {
+    .header {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 0.9rem;
     }
 }

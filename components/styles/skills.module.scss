@@ -15,17 +15,18 @@
         }
     }
     &__items {
+        width: 100%;
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
         grid-row-gap: 15px;
         padding: 20px;
         &__jobs {
-            width: 95%;
+            width: 85%;
+            place-self: center;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            overflow: visible;
             box-shadow: 0 2px 9px $color-secundary;
             border-radius: 20px;
             transition: 250ms all;
@@ -48,6 +49,20 @@
                     margin: 20px;
                 }
             }
+        }
+    }
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+
+@media screen and (max-width: 768px) {
+    .container__items {
+        grid-row-gap: 20px;
+        &__jobs {
+            flex-direction: column;
+            height: 100%;
         }
     }
 }
