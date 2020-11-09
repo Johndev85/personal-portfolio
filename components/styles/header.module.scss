@@ -3,12 +3,17 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px 50px;
     background-color: $color-primary;
+    &__top {
+        display: flex;
+        justify-content: left;
+    }
     & img {
         width: 90px;
+        order: -1;
     }
     &__menu {
         display: flex;
@@ -54,6 +59,25 @@
 
 @media screen and (max-width: 768px) {
     .header {
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
         font-size: 0.9rem;
+        &__top {
+            grid-column: 1 / 2;
+        }
+        & img {
+            width: 90px;
+            grid-column: 2 / 3;
+            place-self: center;
+            order: 0;
+        }
+        &__menu {
+            & nav {
+                display: none;
+            }
+            &__cv {
+                grid-column: 3 / 4;
+            }
+        }
     }
 }

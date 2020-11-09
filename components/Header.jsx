@@ -1,10 +1,14 @@
 import styles from "@/components/styles/header.module.scss"
 import Link from "next/link"
+import MenuList from "@/components/MenuList"
 
 function Header() {
     return (
         <header className={styles.header}>
-            <img src="/images/logo.svg" alt="logo" />
+            <div className={styles.header__top}>
+                <MenuList />
+            </div>
+            <img src="/images/logo.svg" alt="jb-logo" />
             <div className={styles.header__menu}>
                 <nav>
                     <ul>
