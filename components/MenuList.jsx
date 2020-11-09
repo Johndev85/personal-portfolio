@@ -78,7 +78,7 @@ const MenuStyles = {
 function MenuList() {
     return (
         <>
-            <Menu styles={MenuStyles}>
+            <Menu className={styles.menulist} styles={MenuStyles}>
                 <ul>
                     <li>
                         <Link href="#aboutme">

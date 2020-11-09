@@ -17,6 +17,7 @@
     }
     &__menu {
         display: flex;
+        justify-content: center;
         align-items: center;
         & ul {
             display: flex;
@@ -75,9 +76,36 @@
             & nav {
                 display: none;
             }
-            &__cv {
-                grid-column: 3 / 4;
-            }
+        }
+        &__cv {
+            grid-column: 3 / 4;
+            place-self: right;
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .header {
+        font-size: 0.9rem;
+        padding: 15px 30px;
+        &__top {
+            grid-column: 1 / 2;
+        }
+        & img {
+            width: 70px;
+            grid-column: 2 / 3;
+            place-self: center;
+            order: 0;
+        }
+        &__menu {
+            justify-content: flex-end;
+        }
+        &__cv {
+            padding: 10px 20px;
+            margin-left: 25px;
+            font-size: 0.8rem;
+            text-align: center;
+            font-weight: 500;
         }
     }
 }

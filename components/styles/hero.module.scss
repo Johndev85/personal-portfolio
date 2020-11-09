@@ -21,7 +21,7 @@
             color: $color-btn;
             font-weight: bold;
         }
-        p {
+        & p {
             font-size: 1.6rem;
         }
         & h1 {
@@ -68,6 +68,25 @@
             & h2 {
                 font-size: 0.9rem;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .hero {
+        grid-template: 1fr / 1fr;
+        padding: 60px 20px;
+        &__titles {
+            padding: 0px;
+            align-items: center;
+            place-self: center;
+            & h1,
+            h2 {
+                text-align: center;
+            }
+        }
+        &__img {
+            display: none;
         }
     }
 }

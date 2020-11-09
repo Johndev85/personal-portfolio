@@ -34,8 +34,14 @@ function Header() {
                         </li>
                     </ul>
                 </nav>
-                <Link href="#">
-                    <a className={styles.header__cv}>Descargar CV</a>
+                <Link href="/cv/John_Botero-CV.pdf">
+                    <a
+                        className={styles.header__cv}
+                        download="John Botero-CV.pdf"
+                        target="_blank"
+                    >
+                        Descargar CV
+                    </a>
                 </Link>
             </div>
         </header>
