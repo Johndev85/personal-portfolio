@@ -1,4 +1,5 @@
 import styles from "./styles/hero.module.scss"
+import Social from "@/components/Social"
 
 function Hero() {
     return (
@@ -13,6 +14,9 @@ function Hero() {
                         Desarrollador web / React / Next.js / Wordpress /
                         Entusiasta GameDev
                     </h2>
+                    <div className={styles.hero__titles__social}>
+                        <Social />
+                    </div>
                 </section>
                 <section className={styles.hero__img}>
                     <img src="/images/hero-img.svg" alt="hero-img2" />

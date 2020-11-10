@@ -5,7 +5,7 @@ import NavMenu from "@/components/NavMenu"
 
 function Header() {
     return (
-        <header className={styles.header}>
+        <header id="top" className={styles.header}>
             <div className={styles.header__top}>
                 <MenuList />
             </div>

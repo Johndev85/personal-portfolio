@@ -2,7 +2,7 @@
 
 .footer {
     width: 100vw;
-    height: 30vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -10,7 +10,7 @@
     background-color: $color-primary;
     font-size: 1.2rem;
     &__menu {
-        padding-bottom: 30px;
+        padding-bottom: 25px;
         border-bottom: 1px solid $color-secundary;
         ul {
             display: flex;
@@ -40,19 +40,19 @@
 
 @media screen and (min-width: 1920px) {
     .footer {
-        height: 25vh;
+        height: 45vh;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .footer {
-        height: 15vh;
+        height: 45vh;
     }
 }
 
 @media screen and (max-width: 768px) {
     .footer {
-        height: 15vh;
+        height: 26vh;
     }
 }
 @media screen and (max-width: 414px) {

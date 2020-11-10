@@ -1,25 +1,15 @@
 @import "../../styles/variables";
-.bm-burger-button {
-    display: none;
-}
-.menulist {
+
+.btnHambur {
     display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .bm-burger-button {
-        display: initial;
-    }
-
-    .menulist {
+    .btnHambur {
         display: initial;
     }
 
     //     .menulist {
-    //         position: fixed;
-    //         z-index: 5;
-    //         top: 0;
-    //         left: 0;
     //         position: fixed;
     //         z-index: 5;
     //         top: 0;
@@ -59,24 +49,8 @@
     //     }
     // }
 
-    // @media screen and (max-width: 576px) {
-    //     .menu {
-    //         & nav {
-    //             width: 40%;
-    //             & ul {
-    //                 & li {
-    //                     & a {
-    //                         font-size: 1.5rem;
-    //                         text-align: center;
-    //                     }
-    //                 }
-    //             }
-    //         }
+    // @media screen and (max-width: 414px) {
+    //     .menulist {
+    //         display: initial;
     //     }
-}
-
-@media screen and (max-width: 414px) {
-    .menulist {
-        display: initial;
-    }
 }

@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.social {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        &__icon {
+            width: 2.5rem;
+            margin: 5px;
+        }
+        &__title {
+            font-size: 1.1rem;
+            color: $color-font;
+            text-transform: none;
+            text-decoration: none;
+            &:hover {
+                color: $color-btn;
+            }
+        }
+    }
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+
+@media screen and (max-width: 768px) {
+    .social {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .social__item__icon {
+        width: 2rem;
+    }
+}

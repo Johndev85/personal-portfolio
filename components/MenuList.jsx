@@ -1,8 +1,5 @@
 import styles from "./styles/menuList.module.scss"
-import BurgerBtn from "@/components/BurgerBtn"
-
 import { slide as Menu } from "react-burger-menu"
-
 import Link from "next/link"
 
 const MenuStyles = {
@@ -11,7 +8,8 @@ const MenuStyles = {
         width: "36px",
         height: "30px",
         left: "36px",
-        top: "36px",
+        top: "49px",
+        padding: "20px",
         background: "#252d40",
     },
     bmBurgerBars: {
@@ -62,10 +60,6 @@ const MenuStyles = {
     bmItem: {
         display: "inline-block",
     },
-    bmLi: {
-        listStyle: "none",
-        paddingLeft: "40px",
-    },
     bmOverlay: {
         position: "fixed",
         zIndex: "5",
@@ -78,8 +72,19 @@ const MenuStyles = {
 function MenuList() {
     return (
         <>
-            <Menu className={styles.menulist} styles={MenuStyles}>
+            <Menu
+                menuClassName={styles.menulist}
+                burgerButtonClassName={styles.btnHambur}
+                className={styles.menulist}
+                styles={MenuStyles}
+            >
                 <ul>
+                    <li>
+                        <Link href="#top">
+                            <a>Inicio</a>
+                        </Link>
+                    </li>
+
                     <li>
                         <Link href="#aboutme">
                             <a>Sobre mí</a>
