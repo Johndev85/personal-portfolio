@@ -8,7 +8,7 @@ const MenuStyles = {
         width: "36px",
         height: "30px",
         left: "36px",
-        top: "49px",
+        top: "35px",
         padding: "20px",
         background: "#252d40",
     },
@@ -79,12 +79,6 @@ function MenuList() {
                 styles={MenuStyles}
             >
                 <ul>
-                    <li>
-                        <Link href="#top">
-                            <a>Inicio</a>
-                        </Link>
-                    </li>
-
                     <li>
                         <Link href="#aboutme">
                             <a>Sobre mí</a>
