@@ -54,3 +54,25 @@
         }
     }
 }
+
+@media screen and (max-width: 414px) {
+    .container {
+        grid-template: 1fr / 1fr;
+        padding: 30px 20px;
+        &__img {
+            place-self: center;
+            & img {
+                width: 18rem;
+            }
+        }
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__top {
+                margin-top: 25px;
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -26,6 +26,7 @@ function Techs() {
                     </figure>
                 </section>
             </div>
+
             <div className={styles.container__mern__modules}>
                 <h2> Especializado en MERN Stack</h2>
                 <section className={styles.container__mern__modules__icons}>
@@ -57,40 +58,54 @@ function Techs() {
             </div>
             <div className={styles.container__mern__modules__techs}>
                 <h2> Tecnologías Manejadas</h2>
-                <section className={styles.container__mern__modules__icons}>
+                <section
+                    className={styles.container__mern__modules__techs__icons}
+                >
                     <figure
-                        className={styles.container__mern__modules__icons__item}
+                        className={
+                            styles.container__mern__modules__techs__icons__item
+                        }
                     >
                         <img src="/icons/sass-icon.svg" alt="sass-logo" />
                         <h3>SASS</h3>
                     </figure>
                     <figure
-                        className={styles.container__mern__modules__icons__item}
+                        className={
+                            styles.container__mern__modules__techs__icons__item
+                        }
                     >
                         <img src="/icons/next-logo.svg" alt="nextjs-logo" />
                         <h3>Next.js</h3>
                     </figure>
                     <figure
-                        className={styles.container__mern__modules__icons__item}
+                        className={
+                            styles.container__mern__modules__techs__icons__item
+                        }
                     >
                         <img src="/icons/adobexd-logo.svg" alt="adobexd-logo" />
                         <h3>Adobe XD</h3>
                     </figure>
 
                     <figure
-                        className={styles.container__mern__modules__icons__item}
+                        className={
+                            styles.container__mern__modules__techs__icons__item
+                        }
                     >
                         <img src="/icons/webpack-icon.svg" alt="Webpack-logo" />
                         <h3>Webpack</h3>
                     </figure>
                     <figure
-                        className={styles.container__mern__modules__icons__item}
+                        className={
+                            styles.container__mern__modules__techs__icons__item
+                        }
                     >
                         <img src="/icons/vercel-logo.png" alt="vercel-logo" />
                         <h3>Vercel</h3>
                     </figure>
                     <figure
-                        className={styles.container__mern__modules__icons__item}
+                        className={
+                            styles.container__mern__modules__techs__icons__item
+                        }
                     >
                         <img src="/icons/heroku-logo.svg" alt="heroku-logo" />
                         <h3>Heroku</h3>

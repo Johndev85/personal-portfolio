@@ -5,7 +5,7 @@
     width: 100vw;
     height: auto;
     display: grid;
-    grid-template: 1fr / repeat(2, 1fr);
+    grid-template: 1fr / repeat(2, 55% 45%);
     background-color: $color-primary;
     color: $color-font;
 
@@ -50,6 +50,8 @@
 
 @media screen and (max-width: 768px) {
     .hero {
+        grid-template: 1fr / repeat(2, 1fr);
+
         &__img {
             img {
                 width: 28rem;

@@ -23,7 +23,7 @@
     }
     &__items {
         display: grid;
-        grid-template: 1fr / repeat(2, 1fr);
+        grid-template: auto / repeat(3, 1fr);
         padding: 15px;
         &__card {
             place-self: center;
@@ -67,6 +67,34 @@
                     border-radius: 20px;
                 }
             }
+        }
+    }
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+
+@media screen and (max-width: 768px) {
+    .container {
+        &__items {
+            grid-template: auto / repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .container {
+        &__items {
+            grid-template: auto / 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        &__items {
+            padding: 0px;
         }
     }
 }

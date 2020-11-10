@@ -64,11 +64,35 @@
  * ====================================================================================================================*/
 
 @media screen and (max-width: 768px) {
-    .container__items {
-        grid-row-gap: 20px;
-        &__jobs {
-            flex-direction: column;
-            height: 100%;
+    .container {
+        padding: 25px;
+        &__items {
+            grid-row-gap: 20px;
+            &__jobs {
+                flex-direction: column;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .container {
+        padding: 15px;
+        font-size: 1rem;
+        &__items {
+            grid-template: repeat(2, auto) / 1fr;
+            grid-row-gap: 25px;
+            &__jobs {
+                & p {
+                    text-align: center;
+                }
+                &__icons {
+                    & img {
+                        margin: 10px;
+                    }
+                }
+            }
         }
     }
 }

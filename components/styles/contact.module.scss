@@ -43,19 +43,21 @@
             font-size: 1.1rem;
         }
         & input {
-            width: 40vw;
+            width: 42vw;
             height: 12%;
             margin: 0 15px;
             padding: 5px;
+            border-radius: 10px;
             box-shadow: 0 0 6px $color-secundary;
         }
         & textarea {
-            width: 40vw;
+            width: 42vw;
             margin-top: 20px;
             margin: 15px;
             padding: 10px;
             resize: none;
             font-size: 1rem;
+            border-radius: 10px;
             box-shadow: 0 0 6px $color-secundary;
         }
         &__btn {
@@ -91,6 +93,12 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .container {
+        height: 55vh;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .container {
         height: 70vh;
@@ -103,5 +111,45 @@
                 width: 72vw;
             }
         }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .container {
+        height: 80vh;
+        &__form {
+            width: 95%;
+            & input {
+                width: 80vw;
+            }
+            & textarea {
+                width: 80vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        height: 90vh;
+        &__form {
+            width: 93%;
+            & label {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+            & input {
+                width: 78vw;
+            }
+            & textarea {
+                width: 78vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        height: 95vh;
     }
 }
