@@ -43,6 +43,21 @@ function Projects() {
                         </Link>
                     </div>
                 </section>
+                <section className={styles.container__items__card4}>
+                    <div className={styles.container__items__card__titles}>
+                        <h2>Favorities Videos</h2>
+                        <h3>Proyecto aplicando MERN Stack</h3>
+                        <p>
+                            HTML5 | SASS | Nextjs | MongoDb | Express | Node.js
+                        </p>
+                        <Link
+                            href="https://favorities-videos.vercel.app/"
+                            target="_black"
+                        >
+                            <a target="_black">Ver Demo</a>
+                        </Link>
+                    </div>
+                </section>
             </section>
         </article>
     )
