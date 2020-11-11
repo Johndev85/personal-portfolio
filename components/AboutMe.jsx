@@ -4,7 +4,11 @@ function AboutMe() {
     return (
         <article id="aboutme" className={styles.container}>
             <div className={styles.container__img}>
-                <img src="/images/aboutme-img.svg" alt="aboutme-img" />
+                <img
+                    loading="lazy"
+                    src="/images/aboutme-img.svg"
+                    alt="aboutme-img"
+                />
             </div>
             <section className={styles.container__text}>
                 <div className={styles.container__text__top}>

@@ -3,7 +3,7 @@
 
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
         }
     }
     &__form {
-        width: 45%;
+        width: 48%;
         padding: 20px 0;
         display: flex;
         flex-direction: column;
@@ -53,7 +53,7 @@
             font-weight: 700;
         }
         & textarea {
-            width: 41vw;
+            width: 44vw;
             margin-top: 20px;
             margin: 15px;
             padding: 10px;
@@ -93,19 +93,19 @@
 
 @media screen and (min-width: 1920px) {
     .container {
-        height: 100vh;
+        height: 65vh;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .container {
-        height: 95vh;
+        height: 65vh;
     }
 }
 
 @media screen and (max-width: 768px) {
     .container {
-        height: 70vh;
+        height: 60vh;
         &__form {
             width: 80%;
             & input {
@@ -120,7 +120,7 @@
 
 @media screen and (max-width: 414px) {
     .container {
-        height: 80vh;
+        height: 73vh;
         &__form {
             width: 95%;
             & input {
@@ -135,7 +135,7 @@
 
 @media screen and (max-width: 375px) {
     .container {
-        height: 90vh;
+        height: 75vh;
         &__form {
             width: 93%;
             & label {

@@ -12,7 +12,11 @@ function Skills() {
             <section className={styles.container__items}>
                 <div className={styles.container__items__jobs}>
                     <div className={styles.container__items__jobs__icons}>
-                        <img src="/icons/code-icon.svg" alt="code-icon" />
+                        <img
+                            loading="lazy"
+                            src="/icons/code-icon.svg"
+                            alt="code-icon"
+                        />
                     </div>
                     <p>
                         Maquetación landing pages, sitios con HTML/CSS,
@@ -23,7 +27,11 @@ function Skills() {
                 </div>
                 <div className={styles.container__items__jobs}>
                     <div className={styles.container__items__jobs__icons}>
-                        <img src="/icons/ux-icon.png" alt="ux-user-icon" />
+                        <img
+                            loading="lazy"
+                            src="/icons/ux-icon.png"
+                            alt="ux-user-icon"
+                        />
                     </div>
 
                     <p>
@@ -35,6 +43,7 @@ function Skills() {
                 <div className={styles.container__items__jobs}>
                     <div className={styles.container__items__jobs__icons}>
                         <img
+                            loading="lazy"
                             src="/icons/Wordpress-icon.png"
                             alt="wordpress-icon"
                         />
@@ -46,7 +55,11 @@ function Skills() {
                 </div>
                 <div className={styles.container__items__jobs}>
                     <div className={styles.container__items__jobs__icons}>
-                        <img src="/icons/woo-icon.svg" alt="woocommerce-icon" />
+                        <img
+                            loading="lazy"
+                            src="/icons/woo-icon.svg"
+                            alt="woocommerce-icon"
+                        />
                     </div>
                     <p>
                         Implementación de tiendas con Woocommerce para
