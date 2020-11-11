@@ -66,6 +66,15 @@ function Techs() {
                             styles.container__mern__modules__techs__icons__item
                         }
                     >
+                        <img src="/icons/git-logo.png" alt="git-logo" />
+                        <h3>Git</h3>
+                    </figure>
+
+                    <figure
+                        className={
+                            styles.container__mern__modules__techs__icons__item
+                        }
+                    >
                         <img src="/icons/sass-icon.svg" alt="sass-logo" />
                         <h3>SASS</h3>
                     </figure>
@@ -77,6 +86,15 @@ function Techs() {
                         <img src="/icons/next-logo.svg" alt="nextjs-logo" />
                         <h3>Next.js</h3>
                     </figure>
+                    <figure
+                        className={
+                            styles.container__mern__modules__techs__icons__item
+                        }
+                    >
+                        <img src="/icons/jest-logo.png" alt="jest-logo" />
+                        <h3>Jest</h3>
+                    </figure>
+
                     <figure
                         className={
                             styles.container__mern__modules__techs__icons__item
