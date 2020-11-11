@@ -13,10 +13,10 @@ export default class MyDocument extends Document {
                         async
                         dangerouslySetInnerHTML={{
                             __html: `window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-            
-              gtag('config', 'G-3RBK30WEKY);`,
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+
+                                gtag('config', 'G-3RBK30WEKY');`,
                         }}
                     />
                 </Head>
