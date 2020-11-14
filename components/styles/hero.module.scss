@@ -15,6 +15,8 @@
         align-items: flex-end;
         padding: 10px 35px;
         text-transform: uppercase;
+        opacity: 0;
+        @include fadeIn-animation;
         &__social {
             display: flex;
             justify-content: flex-end;
@@ -42,6 +44,8 @@
         justify-self: start;
         & img {
             width: 35rem;
+            opacity: 0;
+            @include fadeIn-animation;
             border-radius: 30%;
             filter: drop-shadow(2px 4px 4px #585858);
         }

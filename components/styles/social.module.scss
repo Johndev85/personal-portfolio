@@ -15,6 +15,9 @@
         &__icon {
             width: 2.5rem;
             margin: 5px;
+            &:hover {
+                filter: drop-shadow(2px 4px 4px $color-btn);
+            }
         }
         &__title {
             font-size: 1.1rem;

@@ -19,11 +19,7 @@ function Hero() {
                     </div>
                 </section>
                 <section className={styles.hero__img}>
-                    <img
-                        loading="lazy"
-                        src="/images/hero-img.svg"
-                        alt="hero-img2"
-                    />
+                    <img src="/images/hero-img.svg" alt="hero-img2" />
                 </section>
             </article>
         </>

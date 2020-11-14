@@ -9,7 +9,7 @@ function Footer() {
                 <NavMenu />
             </div>
             <Social />
-            <span>John Botero - 2020</span>
+            <span>Copyright ©2020 - Diseño por John Botero.</span>
         </footer>
     )
 }

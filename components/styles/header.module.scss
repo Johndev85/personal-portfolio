@@ -14,8 +14,16 @@
     & img {
         width: 90px;
         order: -1;
+        opacity: 0;
+        @include fadeIn-animation;
+        &:hover {
+            @include pulse-animation;
+            filter: drop-shadow(2px 2px 4px $color-btHover);
+        }
     }
     &__menu {
+        opacity: 0;
+        @include fadeIn-animation;
         display: flex;
         justify-content: center;
         align-items: center;

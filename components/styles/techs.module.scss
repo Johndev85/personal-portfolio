@@ -23,12 +23,15 @@
             }
             &__item {
                 text-align: center;
+                transition: all 0.3s ease-in-out;
                 & h3 {
                     font-size: 1rem;
                 }
                 & img {
                     width: 60px;
-                    filter: drop-shadow(2px 4px 4px #585858);
+                }
+                &:hover {
+                    transform: scale(1.1);
                 }
             }
         }
@@ -49,12 +52,15 @@
             }
             &__item {
                 text-align: center;
+                transition: all 0.3s ease-in-out;
                 & h3 {
                     font-size: 1rem;
                 }
                 & img {
                     width: 60px;
-                    filter: drop-shadow(2px 4px 4px #585858);
+                }
+                &:hover {
+                    transform: scale(1.1);
                 }
             }
         }
