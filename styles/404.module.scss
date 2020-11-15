@@ -1,0 +1,96 @@
+@import "../styles/variables";
+@import "./mixins";
+
+.header {
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+    & img {
+        width: 90px;
+        opacity: 0;
+        @include fadeIn-animation;
+        &:hover {
+            @include pulse-animation;
+            filter: drop-shadow(2px 2px 4px $color-btHover);
+        }
+    }
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-primary;
+    &__central {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr);
+        & img {
+            justify-self: end;
+            align-self: center;
+            filter: drop-shadow(2px 2px 2px $color-secundary);
+            @include fadeIn-animation;
+        }
+        &__text {
+            place-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $color-font;
+            filter: drop-shadow(1px 1px 1px $color-secundary);
+            @include fadeIn-animation;
+            &__error {
+                font-size: 1.6rem;
+                font-weight: bold;
+                padding: 15px;
+            }
+            & span {
+                font-weight: 600;
+                font-size: 2.2rem;
+            }
+            & p {
+                font-size: 1.6rem;
+            }
+            &__btn {
+                margin-top: 30px;
+                padding: 20px 30px;
+                border-radius: 10px;
+                background-color: $color-btn;
+                text-decoration: none;
+                color: $color-font;
+                &:hover {
+                    @include btn-hover;
+                }
+            }
+        }
+    }
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+
+@media screen and (max-width: 768px) {
+    .container__central {
+        img {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .container {
+        height: 70vh;
+        &__central {
+            grid-template: 1fr / 1fr;
+            img {
+                justify-self: center;
+                width: 70%;
+            }
+        }
+    }
+}

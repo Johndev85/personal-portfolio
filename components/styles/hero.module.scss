@@ -17,6 +17,13 @@
         text-transform: uppercase;
         opacity: 0;
         @include fadeIn-animation;
+        &__moving {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include title-animation;
+        }
         &__social {
             display: flex;
             justify-content: flex-end;
@@ -44,7 +51,6 @@
         justify-self: start;
         & img {
             width: 35rem;
-            opacity: 0;
             @include fadeIn-animation;
             border-radius: 30%;
             filter: drop-shadow(2px 4px 4px #585858);

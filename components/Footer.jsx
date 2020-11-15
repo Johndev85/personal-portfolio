@@ -9,7 +9,10 @@ function Footer() {
                 <NavMenu />
             </div>
             <Social />
-            <span>Copyright ©2020 - Diseño por John Botero.</span>
+            <span>
+                Copyright © 2020 - Diseño y programación por John Botero usando
+                React + Next.js.
+            </span>
         </footer>
     )
 }

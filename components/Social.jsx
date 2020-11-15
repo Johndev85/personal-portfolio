@@ -10,7 +10,6 @@ function Social() {
                     className={styles.social__item__title}
                 >
                     <img
-                        loading="lazy"
                         className={styles.social__item__icon}
                         src="/icons/github-logo.svg"
                         alt="github-logo"
@@ -31,7 +30,6 @@ function Social() {
                     className={styles.social__item__title}
                 >
                     <img
-                        loading="lazy"
                         className={styles.social__item__icon}
                         src="/icons/linkedin-logo.svg"
                         alt="likedin-logo"
@@ -52,7 +50,6 @@ function Social() {
                     className={styles.social__item__title}
                 >
                     <img
-                        loading="lazy"
                         className={styles.social__item__icon}
                         src="/icons/torre-logo.svg"
                         alt="torre-logo"
