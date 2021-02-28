@@ -12,7 +12,7 @@ function Header() {
             <img src="/images/logo.svg" alt="jb-logo" />
             <div className={styles.header__menu}>
                 <NavMenu />
-                <Link href="/cv/John_Botero-CV.pdf">
+                {/* <Link href="/cv/John_Botero-CV.pdf">
                     <a
                         className={styles.header__cv}
                         download="John Botero-CV.pdf"
@@ -20,7 +20,7 @@ function Header() {
                     >
                         Descargar CV
                     </a>
-                </Link>
+                </Link> */}
             </div>
         </header>
     )

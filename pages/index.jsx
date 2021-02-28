@@ -17,7 +17,7 @@ function HomePage() {
                     content="width=device-width, initial-scale=1.0"
                 />
 
-                <title>John Botero - Portfolio</title>
+                <title>John Botero | Portfolio</title>
                 <link
                     rel="apple-touch-icon"
                     sizes="57x57"
